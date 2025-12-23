@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ink: 22 24 27;
+  --color-mist: 247 244 238;
+  --color-sprout: 24 108 84;
+  --color-clay: 192 78 52;
+  --color-sun: 245 198 78;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  font-family: var(--font-body), sans-serif;
+  color: rgb(var(--color-ink));
+  background:
+    radial-gradient(900px circle at 5% -10%, rgba(245, 198, 78, 0.35), transparent 60%),
+    radial-gradient(700px circle at 100% 0%, rgba(24, 108, 84, 0.22), transparent 55%),
+    linear-gradient(180deg, rgb(247, 244, 238) 0%, rgb(246, 243, 235) 100%);
+}
+
+::selection {
+  background: rgba(245, 198, 78, 0.6);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  section[id] {
+    scroll-margin-top: 100px;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold sm:text-4xl;
+  }
+
+  .eyebrow {
+    @apply text-xs uppercase tracking-[0.3em] text-ink/60;
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-ink/10 bg-white/80 p-6 shadow-soft;
+  }
+
+  .accent-button {
+    @apply inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-mist transition hover:-translate-y-0.5 hover:bg-ink/90;
+  }
+
+  .ghost-button {
+    @apply inline-flex items-center justify-center rounded-full border border-ink/30 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-ink transition hover:-translate-y-0.5 hover:border-ink/60;
+  }
+}
