@@ -10,10 +10,8 @@ export default function Hero() {
   return (
     <section className="section-shell pb-16 pt-12 sm:pb-24 sm:pt-20">
       <div className="relative">
-        <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-sun/60 blur-2xl" />
-        <div className="absolute -bottom-6 right-4 h-28 w-28 rounded-full bg-sprout/40 blur-2xl" />
         <div className="overflow-hidden rounded-[32px] border border-ink/10 bg-white/80 p-3 shadow-soft">
-          <div className="relative aspect-[16/9] overflow-hidden rounded-[24px] bg-mist/70 sm:aspect-[21/9]">
+          <div className="relative aspect-[16/9] overflow-hidden rounded-[24px] bg-white sm:aspect-[21/9]">
             <Image
               src="/images/hero.jpeg"
               alt="Community collaboration meeting"
