@@ -1,23 +1,17 @@
 import Image from "next/image";
 
-const stats = [
-  { label: "Active partners", value: "42" },
-  { label: "Cities served", value: "15" },
-  { label: "Annual programs", value: "28" }
-];
-
 export default function Hero() {
   return (
     <section className="section-shell pb-16 pt-12 sm:pb-24 sm:pt-20">
       <div className="relative">
         <div className="overflow-hidden rounded-[32px] border border-ink/10 bg-white/80 p-2 shadow-sm sm:p-2">
-          <div className="relative aspect-[16/9] overflow-hidden rounded-[24px] bg-ink/5 sm:aspect-[21/9]">
+          <div className="relative aspect-[16/12] overflow-hidden rounded-[24px] bg-ink/5 sm:aspect-[25/12]">
             <Image
-              src="/images/hero.jpeg"
-              alt="Community collaboration meeting"
+              src="/images/main.png"
+              alt="Church fellowship gathering"
               fill
               sizes="100vw"
-              className="object-cover object-[50%_25%] scale-[1.04] blur-[3px]"
+              className="object-cover object-[50%_50%] scale-[1.08] blur-[1px]"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/55 to-ink/20" />
@@ -33,14 +27,19 @@ export default function Hero() {
                   community care.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4">
-                  <a href="#about" className="accent-button bg-mist text-ink hover:bg-mist/90">
-                    Discover our story
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfwTmBxi4M31IDJrAxTU8aqOCfBBdTXubClLKYD0k-8RA1rpA/viewform?usp=sharing&ouid=116408816532268023570"
+                    className="accent-button bg-mist text-ink hover:bg-mist/90"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Connect With Us
                   </a>
                   <a
-                    href="#activities"
+                    href="mailto:hello@scoginternational.org"
                     className="ghost-button border-mist/60 text-mist hover:border-mist"
                   >
-                    View initiatives
+                    Contact Us
                   </a>
                 </div>
               </div>
@@ -53,16 +52,6 @@ export default function Hero() {
             </span>
           </div>
         </div>
-      </div>
-      <div className="mt-10 grid gap-6 sm:grid-cols-3">
-        {stats.map((stat) => (
-          <div key={stat.label} className="rounded-2xl border border-ink/10 bg-white/70 p-4">
-            <p className="text-2xl font-semibold">{stat.value}</p>
-            <p className="mt-1 text-xs uppercase tracking-[0.3em] text-ink/60">
-              {stat.label}
-            </p>
-          </div>
-        ))}
       </div>
     </section>
   );

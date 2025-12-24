@@ -1,10 +1,9 @@
 import Image from "next/image";
 
 const navItems = [
-  { label: "About", href: "#about" },
+  { label: "Visit", href: "#visit" },
   { label: "Activities", href: "#activities" },
-  { label: "Leaders", href: "#leaders" },
-  { label: "Members", href: "#members" }
+  { label: "Leaders", href: "#leaders" }
 ];
 
 export default function Navbar() {
@@ -34,10 +33,12 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:hello@scoginternational.org"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfwTmBxi4M31IDJrAxTU8aqOCfBBdTXubClLKYD0k-8RA1rpA/viewform?usp=sharing&ouid=116408816532268023570"
             className="accent-button px-4 py-2 text-[0.65rem]"
+            target="_blank"
+            rel="noreferrer"
           >
-            Meet With Us
+            Connect With Us
           </a>
         </nav>
       </div>

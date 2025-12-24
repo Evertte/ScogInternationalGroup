@@ -1,52 +1,177 @@
-export const activities = [
+export type ActivityData = {
+  title: string;
+  description: string;
+  icon: "prayer" | "bible" | "fellowship" | "worship" | "care" | "culture";
+};
+
+export const activities: ActivityData[] = [
   {
-    title: "Leadership incubator",
-    description:
-      "Six-month cohorts for emerging civic leaders with coaching, policy labs, and peer exchanges.",
-    cadence: "Quarterly",
-    location: "West Africa"
+    title: "Prayer Together",
+    description: "Weekly prayer and encouragement.",
+    icon: "prayer"
   },
   {
-    title: "Community health sprints",
-    description:
-      "Rapid-response initiatives connecting clinics, local governments, and funding partners.",
-    cadence: "Monthly",
-    location: "East Africa"
+    title: "Bible Study",
+    description: "Learning God's Word and applying it to life.",
+    icon: "bible"
   },
   {
-    title: "Education equity labs",
-    description:
-      "Design workshops with educators and youth to co-build inclusive learning experiences.",
-    cadence: "Biannual",
-    location: "North America"
+    title: "Fellowship",
+    description: "Building friendships across cultures.",
+    icon: "fellowship"
   },
   {
-    title: "Entrepreneurship exchange",
-    description:
-      "Cross-border mentorship and market access for small business owners and founders.",
-    cadence: "Ongoing",
-    location: "Global"
+    title: "Worship",
+    description: "Praising God together with joy.",
+    icon: "worship"
+  },
+  {
+    title: "Community Care",
+    description: "Supporting members in practical ways.",
+    icon: "care"
+  },
+  {
+    title: "Cultural Connection",
+    description: "Celebrating languages, food, and stories.",
+    icon: "culture"
   }
 ];
 
-export const leaders = [
+export type ActivityPhoto = {
+  src: string;
+  alt: string;
+};
+
+export const activityPhotos: ActivityPhoto[] = [
   {
-    name: "Dr. Lila Owusu",
-    role: "President",
-    bio: "Public policy advisor focused on inclusive governance and regional partnerships.",
-    image: "/images/leaders/leader-01.jpg"
+    src: "/images/img.jpg",
+    alt: "Fellowship gathering at Starkville Church of God"
+  },
+  {
+    src: "/images/hero1.png",
+    alt: "Members sharing a meal after service"
+  },
+  {
+    src: "/images/image.png",
+    alt: "Community fellowship photo"
+  },
+  {
+    src: "/images/image1.png",
+    alt: "Church community gathering"
+  }
+];
+
+export type GroupPhoto = {
+  src: string;
+  alt: string;
+};
+
+export const groupPhotos: GroupPhoto[] = [
+  {
+    src: "/images/img.jpg",
+    alt: "Church members sharing fellowship together"
+  },
+  {
+    src: "/images/hero1.png",
+    alt: "Worship gathering with the church community"
+  },
+  {
+    src: "/images/image.png",
+    alt: "Smiling church family after service"
+  },
+  {
+    src: "/images/image1.png",
+    alt: "Celebrating together as one body in Christ"
+  },
+  {
+    src: "/images/image2.png",
+    alt: "Fellowship moments with the church family"
+  },
+  {
+    src: "/images/main.png",
+    alt: "Church community worshiping together"
+  },
+  {
+    src: "/images/hero.jpeg",
+    alt: "Church fellowship group photo"
+  },
+  {
+    src: "/images/more.png",
+    alt: "Church family gathering"
+  },
+  {
+    src: "/images/more2.png",
+    alt: "Church community together in fellowship"
+  }
+];
+
+export type HighlightCardData = {
+  title: string;
+  description: string;
+  icon: "community" | "clock" | "location";
+  highlights?: string[];
+  schedule?: { label: string; time: string }[];
+  actionLabel?: string;
+  actionHref?: string;
+};
+
+export const highlightCards: HighlightCardData[] = [
+  {
+    title: "What We Do",
+    description:
+      "A faith-filled international community united in prayer, Bible study, and fellowship. We grow together in Christ while celebrating diverse cultures and languages.",
+    icon: "community"
+  },
+  {
+    title: "When We Meet",
+    description: "Join us for prayer, worship, and the study of God's Word.",
+    schedule: [
+      { label: "Bible Study", time: "9:20 AM" },
+      { label: "Worship Service", time: "10:00 AM" }
+    ],
+    icon: "clock"
+  },
+  {
+    title: "Where We Meet",
+    description: "Starkville Church of God\n100 Locksley Way\nStarkville, MS 39759",
+    actionLabel: "Get Directions",
+    actionHref:
+      "https://maps.google.com/?q=Starkville+Church+of+God+100+Locksley+Way+Starkville+MS+39759",
+    icon: "location"
+  }
+];
+
+export type Leader = {
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+  email?: string;
+  facebookUrl?: string;
+  instagramUrl?: string;
+};
+
+export const leaders: Leader[] = [
+  {
+    name: "Dennis Laughlin",
+    role: "Senior Pastor",
+    bio: "Leading the church with prayer, teaching, and shepherding our community in Christ.",
+    image: "/images/pastor1.png",
+    email: "dennis@starkvillecog.com",
+    facebookUrl: "https://www.facebook.com/dennis.laughlin",
+    instagramUrl: "https://www.instagram.com/rdennislaughlin/"
   },
   {
     name: "Samuel Okoro",
     role: "Director of Programs",
     bio: "Leads multi-country implementation teams with a focus on health and education.",
-    image: "/images/leaders/leader-02.jpg"
+    image: "/images/pastor2.png"
   },
   {
-    name: "Amira Chen",
+    name: "James",
     role: "Chair, Advisory Council",
     bio: "Entrepreneur and investor supporting social impact ventures across the diaspora.",
-    image: "/images/leaders/leader-03.jpg"
+    image: "/images/jj.jpg"
   }
 ];
 
