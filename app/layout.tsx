@@ -18,9 +18,21 @@ const body = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SCOG International Group",
+  title: "Starkville Church of God International Group",
   description:
-    "SCOG International Group brings together members, leaders, and community partners to deliver global initiatives with local impact."
+    "We are a welcoming church family committed to worship, discipleship, and service.",
+  openGraph: {
+    title: "Starkville Church of God International Group",
+    description:
+      "We are a welcoming church family committed to worship, discipleship, and service.",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Starkville Church of God International Group",
+    description:
+      "We are a welcoming church family committed to worship, discipleship, and service."
+  }
 };
 
 export default function RootLayout({
