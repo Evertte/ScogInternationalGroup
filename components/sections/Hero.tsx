@@ -36,8 +36,10 @@ export default function Hero() {
                     Connect With Us
                   </a>
                   <a
-                    href="mailto:hello@scoginternational.org"
+                    href="https://www.starkvillecog.com/contact"
                     className="ghost-button border-mist/60 text-mist hover:border-mist"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     Contact Us
                   </a>

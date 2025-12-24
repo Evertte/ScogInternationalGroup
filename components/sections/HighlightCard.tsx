@@ -131,9 +131,10 @@ export default function HighlightCard({
       {actionLabel && actionHref ? (
         <a
           href={actionHref}
-          className="mt-auto inline-flex items-center justify-center rounded-full border border-ink/20 bg-ink/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:border-ink/40 hover:bg-ink/10"
+          className="mt-auto inline-flex items-center justify-center gap-2 rounded-full border border-ink/20 bg-ink/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:border-ink/40 hover:bg-ink/10"
         >
           {actionLabel}
+          <span aria-hidden="true">→</span>
         </a>
       ) : null}
     </div>
