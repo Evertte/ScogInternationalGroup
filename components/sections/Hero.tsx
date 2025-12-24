@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="section-shell pb-16 pt-12 sm:pb-24 sm:pt-20">
+    <section className="section-shell pb-14 pt-10 sm:pb-24 sm:pt-20">
       <div className="relative">
-        <div className="overflow-hidden rounded-[32px] border border-ink/10 bg-white/80 p-2 shadow-sm sm:p-2">
-          <div className="relative aspect-[16/12] overflow-hidden rounded-[24px] bg-ink/5 sm:aspect-[25/12]">
+        <div className="overflow-hidden rounded-[28px] border border-ink/10 bg-white/80 p-2 shadow-sm sm:rounded-[32px] sm:p-4">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[20px] bg-ink/5 sm:aspect-[25/12] sm:rounded-[24px]">
             <Image
               src="/images/main.png"
               alt="Church fellowship gathering"
@@ -16,17 +16,15 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/55 to-ink/20" />
             <div className="absolute inset-0 flex items-end">
-              <div className="w-full px-6 pb-8 sm:px-10 sm:pb-10">
+              <div className="w-full px-4 pb-5 sm:px-10 sm:pb-10">
                 <p className="eyebrow text-mist/80">Faith-led community</p>
-                <h1 className="mt-3 max-w-4xl text-balance text-3xl font-semibold text-mist drop-shadow sm:text-4xl lg:text-5xl">
+                <h1 className="mt-3 max-w-3xl text-balance text-2xl font-semibold text-mist drop-shadow sm:text-4xl lg:text-5xl">
                   Welcome to Starkville Church of God International Group
                 </h1>
-                <p className="mt-4 max-w-2xl text-base text-mist/80 sm:text-lg">
-                  We are a welcoming church family committed to worship, discipleship, and service,
-                  supporting families and neighbors through year-round outreach, mentorship, and
-                  community care.
+                <p className="mt-3 max-w-2xl text-sm text-mist/80 sm:mt-4 sm:text-lg">
+                  We are a welcoming church family committed to worship, discipleship, and service.
                 </p>
-                <div className="mt-6 flex flex-wrap gap-4">
+                <div className="mt-5 flex flex-wrap gap-3 sm:mt-6 sm:gap-4">
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfwTmBxi4M31IDJrAxTU8aqOCfBBdTXubClLKYD0k-8RA1rpA/viewform?usp=sharing&ouid=116408816532268023570"
                     className="accent-button bg-mist text-ink hover:bg-mist/90"

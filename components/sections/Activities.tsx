@@ -106,22 +106,26 @@ export default function Activities() {
     <section id="activities" className="section-shell py-16 sm:py-24">
       <div>
         <p className="eyebrow text-ink/60">Activities</p>
-        <h2 className="section-title mt-3">What we do together each week.</h2>
-        <p className="mt-4 max-w-2xl text-sm text-ink/70">
+        <h2 className="section-title mt-3 text-balance">What we do together each week.</h2>
+        <p className="mt-4 max-w-2xl text-sm text-ink/70 sm:text-base">
           Simple, steady rhythms of worship, learning, and care that help us grow in faith.
         </p>
       </div>
-      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
         {activities.map((activity) => (
           <div
             key={activity.title}
-            className="rounded-[24px] border border-ink/10 bg-white p-6 shadow-sm transition-shadow transition-transform lg:hover:-translate-y-1 lg:hover:shadow-md"
+            className="flex h-full flex-col rounded-[24px] border border-ink/10 bg-white p-5 shadow-sm transition-shadow transition-transform sm:p-6 lg:hover:-translate-y-1 lg:hover:shadow-md"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ink/5 text-ink">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-ink/5 text-ink sm:h-10 sm:w-10">
               {iconMap[activity.icon]}
             </div>
-            <h3 className="mt-5 text-lg font-semibold text-ink">{activity.title}</h3>
-            <p className="mt-3 text-sm text-ink/70">{activity.description}</p>
+            <h3 className="mt-4 text-base font-semibold text-ink sm:text-lg">
+              {activity.title}
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-ink/70 sm:text-[0.95rem]">
+              {activity.description}
+            </p>
           </div>
         ))}
       </div>
