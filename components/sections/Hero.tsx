@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="section-shell pb-14 pt-10 sm:pb-24 sm:pt-20">
       <div className="relative">
         <div className="overflow-hidden rounded-[28px] border border-ink/10 bg-white/80 p-2 shadow-sm sm:rounded-[32px] sm:p-4">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[20px] bg-ink/5 sm:aspect-[25/12] sm:rounded-[24px]">
+          <div className="relative aspect-[5/4] overflow-hidden rounded-[20px] bg-ink/5 sm:aspect-[11/5] sm:rounded-[24px]">
             <Image
               src="/images/main.png"
               alt="Church fellowship gathering"
