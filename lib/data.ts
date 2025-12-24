@@ -149,6 +149,9 @@ export type Leader = {
   email?: string;
   facebookUrl?: string;
   instagramUrl?: string;
+  xUrl?: string;
+  linkedinUrl?: string;
+  showSocialIcons?: boolean;
 };
 
 export const leaders: Leader[] = [
@@ -162,16 +165,22 @@ export const leaders: Leader[] = [
     instagramUrl: "https://www.instagram.com/rdennislaughlin/"
   },
   {
-    name: "Samuel Okoro",
-    role: "Director of Programs",
-    bio: "Leads multi-country implementation teams with a focus on health and education.",
-    image: "/images/pastor2.png"
+    name: "Joel Barron",
+    role: "Associate / Worship / Youth Pastor",
+    bio: "Serving with worship leadership, youth discipleship, and pastoral care.",
+    image: "/images/pastor2.png",
+    email: "joel@starkvillecog.com",
+    facebookUrl: "https://www.facebook.com/joel.barron.5",
+    instagramUrl: "https://www.instagram.com/pastor.joel/",
+    xUrl: "https://x.com/mr_joelb"
   },
   {
-    name: "James",
-    role: "Chair, Advisory Council",
-    bio: "Entrepreneur and investor supporting social impact ventures across the diaspora.",
-    image: "/images/jj.jpg"
+    name: "James Kwetey",
+    role: "International Ministry Coordinator",
+    bio: "Coordinating international ministry connections and community outreach.",
+    image: "/images/jj.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/james-kwetey/",
+    showSocialIcons: true
   }
 ];
 
