@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="section-shell pb-14 pt-10 sm:pb-24 sm:pt-20">
       <div className="relative">
         <div className="overflow-hidden rounded-[28px] border border-ink/10 bg-white/80 p-2 shadow-sm sm:rounded-[32px] sm:p-4">
-          <div className="relative aspect-[5/4] overflow-hidden rounded-[20px] bg-ink/5 sm:aspect-[11/5] sm:rounded-[24px]">
+          <div className="relative aspect-[1/1] overflow-hidden rounded-[20px] bg-ink/5 sm:aspect-[11/5] sm:rounded-[24px]">
             <Image
               src="/images/main.png"
               alt="Church fellowship gathering"
@@ -18,7 +18,7 @@ export default function Hero() {
             <div className="absolute inset-0 flex items-end">
               <div className="w-full px-4 pb-5 sm:px-10 sm:pb-10">
                 <p className="eyebrow text-mist/80">Faith-led community</p>
-                <h1 className="mt-3 max-w-3xl text-balance text-2xl font-semibold text-mist drop-shadow sm:text-4xl lg:text-5xl">
+                <h1 className="mt-3 max-w-3xl text-balance text-xl font-semibold leading-tight text-mist drop-shadow sm:text-4xl lg:text-5xl">
                   Welcome to Starkville Church of God International Group
                 </h1>
                 <p className="mt-3 max-w-2xl text-sm text-mist/80 sm:mt-4 sm:text-lg">
