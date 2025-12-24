@@ -11,18 +11,21 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-mist/80 backdrop-blur">
       <div className="section-shell flex flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
-        <a href="/" className="flex items-center gap-3 font-display text-lg font-semibold">
-          <span className="relative h-10 w-10 overflow-hidden rounded-full bg-white/80 shadow-soft">
+        <a
+          href="/"
+          className="flex flex-col items-center gap-2 text-center"
+          aria-label="Starkville Church of God International Group"
+        >
+          <span className="relative h-20 w-40">
             <Image
               src="/images/SCOG.avif"
               alt="SCOG logo"
               fill
-              sizes="40px"
+              sizes="160px"
               className="object-contain"
               priority
             />
           </span>
-          <span>SCOG International Group</span>
         </a>
         <nav className="flex flex-wrap items-center gap-4 text-[0.7rem] font-semibold uppercase tracking-[0.3em]">
           {navItems.map((item) => (
@@ -30,6 +33,12 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
+          <a
+            href="mailto:hello@scoginternational.org"
+            className="accent-button px-4 py-2 text-[0.65rem]"
+          >
+            Meet With Us
+          </a>
         </nav>
       </div>
     </header>
